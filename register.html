@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register-login_style.css">
+</head>
+<body>
+    <form onsubmit="registerUser(event)" id="registerForm">
+        <h2>Register</h2>
+
+        <label for="user">Name</label>
+        <input type="text" name="name" id="user" class="text">
+        <br>
+        <p id="nameError" class="error">Name is required</p>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" class="text">
+        <br>
+        <p id="emailError" class="error">Email is required</p>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" class="text">
+        <br>
+        <p id="passwordError" class="error">Password is required</p>
+        <br>
+        <label>Gender</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+        <br><br>
+        <p id="genderError" class="error">Please select your gender</p>
+        
+
+        <label for="countries">Country</label>
+        <select id="countries" name="country">
+            <option value="">Select country</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="UAE">UAE</option>
+        </select>
+        <br><br>
+        <p id="countryError" class="error">Please select your country</p>
+
+        <button type="submit">Register</button>
+        
+    </form>
+
+    <div class="form-footer">
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
